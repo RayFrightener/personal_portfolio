@@ -5,7 +5,20 @@ body {
 
   h1 {
     color: blue;
+    text-align: center;
   }
-  p {
+  h2 {
     color: red;
+    text-align: center;
   }
+  img {
+    width: 8%;
+    height: auto; /* This ensures the aspect ratio is maintained */
+  }
+  .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  
