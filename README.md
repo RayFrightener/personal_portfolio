@@ -43,6 +43,22 @@ touch .gitignore if not already present
 //     "watch": "webpack --watch",
 //     "test": "echo \"Error: no test specified\" && exit 1"
 //   },
+7. run: npm install --save-dev babel-loader @babel/core @babel/preset-env
+8. update webpack.config.js to use babel-loader by adding 
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+9. create babel.config.json file and add:
+{
+  "presets": ["@babel/preset-env"]
+}
 
 Few tips:
 1. your index.html in dist should have the script tag
