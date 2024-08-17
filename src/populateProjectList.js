@@ -14,8 +14,7 @@ function populateProjectList() {
                     ),
         createProject(
             'System Information Logger ',
-            "<p><b>Features:</b> Retrieves and records the computer's serial number, hostname, model, Ethernet MAC address, and Wi-Fi MAC address; Outputs the collected information to a text file on the USB drive; Automatically appends new information to the file if it already exists; Handles errors gracefully and provides user feedback.</p><p><b>Technologies</b>: PowerShell, Bash. <p><p><b>Outcome:</b> Enabled efficient and automated collection of critical system information, simplifying inventory and troubleshooting processes and reducing time spent on inventory by 88%.</p>",
-            'https://example.com/collectComputerInfo'
+            "<p><b>Features:</b> Retrieves and records the computer's serial number, hostname, model, Ethernet MAC address, and Wi-Fi MAC address; Outputs the collected information to a text file on the USB drive; Automatically appends new information to the file if it already exists; Handles errors gracefully and provides user feedback.</p><p><b>Technologies</b>: PowerShell, Bash. <p><p><b>Outcome:</b> Enabled efficient and automated collection of critical system information, simplifying inventory and troubleshooting processes and reducing time spent on inventory by 88%.</p>"
                     ),
         createProject(
             'Standard Calculator',
