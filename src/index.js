@@ -1,5 +1,5 @@
 import './styles.css';
+import { populateProjectList } from './populateProjectList';
 
-const populateProjectList = require('./populateProjectList');
 
 populateProjectList();
