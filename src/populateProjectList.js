@@ -9,7 +9,11 @@ function populateProjectList() {
 
     const projects = [
         createProject(
-            'Collect Computer Info Script',
+            'Personal Portfolio Website',
+            "<p><b>Features:</b> Developed a dynamic project portfolio website that automatically creates and displays a list of projects. Each project entry includes a description, technologies used, and the outcomes of the project. The website uses a function that creates project objects, which are then used to populate the project list on the website in real-time. This ensures that the website is easily updatable and presents projects in a clear and organized manner.</p><p><b>Technologies:</b> JavaScript, HTML, CSS.</p><p><b>Outcome:</b> Successfully built a user-friendly portfolio website that effectively showcases various projects. Demonstrated the ability to implement dynamic content generation, enhancing the site's maintainability and improving the overall presentation of work.</p>"
+                    ),
+        createProject(
+            'System Information Logger ',
             "<p><b>Features:</b> Retrieves and records the computer's serial number, hostname, model, Ethernet MAC address, and Wi-Fi MAC address; Outputs the collected information to a text file on the USB drive; Automatically appends new information to the file if it already exists; Handles errors gracefully and provides user feedback.</p><p><b>Technologies</b>: PowerShell, Bash. <p><p><b>Outcome:</b> Enabled efficient and automated collection of critical system information, simplifying inventory and troubleshooting processes and reducing time spent on inventory by 88%.</p>",
             'https://example.com/collectComputerInfo'
                     ),
@@ -42,14 +46,17 @@ function populateProjectList() {
         const description = document.createElement('p');
         description.innerHTML = project.description;
 
-        const link = document.createElement('a');
-        link.href = project.link;
-        link.textContent = 'View Project';
-        link.target = '_blank';
 
         details.appendChild(summary);
         details.appendChild(description);
-        details.appendChild(link);
+
+        if (project.link) {
+            const link = document.createElement('a');
+            link.href = project.link;
+            link.textContent = 'View Project';
+            link.target = '_blank';
+            details.appendChild(link);    
+        }
 
         listItem.appendChild(details);
         projectList.appendChild(listItem);
